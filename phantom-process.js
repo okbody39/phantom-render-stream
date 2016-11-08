@@ -118,7 +118,7 @@ var forcePrintMedia = function() {
 var renders = 0, maxRenders = 500;
 var loop = function() {
   var line = system.stdin.readLine();
-  if (!line.trim()) return phantom.exit(0); 
+  if (!line.trim()) return phantom.exit(0);
 
   try {
     line = JSON.parse(line);
@@ -153,6 +153,8 @@ var loop = function() {
     width: line.width || 1280,
     height: line.height || 960
   };
+
+console.log('pahntom-render-stream log : 'line);
 
   page.paperSize = line.paperSize ||
     {
