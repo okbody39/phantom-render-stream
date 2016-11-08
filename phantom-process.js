@@ -154,8 +154,6 @@ var loop = function() {
     height: line.height || 960
   };
 
-console.log('pahntom-render-stream log : 'line);
-
   page.paperSize = line.paperSize ||
     {
       format: line.paperFormat || 'A4',
